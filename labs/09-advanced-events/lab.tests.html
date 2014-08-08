@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>QUnit Core Test Suite</title>
+	<link rel="stylesheet" href="../../libs/jquery-qunit/qunit/qunit.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="../../css/default.css" type="text/css" media="screen">
+</head>
+<body>
+	<h1 id="qunit-header">QUnit Selections Test Suite</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-toolbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	<div id="qunit-fixture">
+	<!-- QUNIT FIXTURE -->
+	<div id="container">
+
+		<header>
+			<h1>Twitter</h1>
+		</header>
+
+		<section id="user-profile">
+			<img src="" width="73" height="73" />
+			<h2>@Username</h2>
+			<p class="user-tweets">Tweets: <span>0</span></p>
+			<p class="followers">Followers: <span>0</span></p>
+			<p class="following">Following: <span>0</span></p>
+		</section>
+
+		<section id="feed">
+
+			<ul id="tweets" class="normal-tweet show-promoted-tweets">
+				<li class="tweet promoted-tweet" data-user-name="appendTo">
+					<div class="image">
+						<img height="48" width="48" src="http://twitter.com/api/users/profile_image?screen_name=appendTo" alt="" />
+					</div>
+					<div class="content">
+						<div class="user">
+							<a class="user-name" href="http://twitter.com/appendTo" title="appendTo">appendTo</a>
+							<div class="full-name">appendTo</div>
+						</div>
+						<div class="text">A tweet here, a tweet there, a tweet everyewhere...</div>
+						<div class="time-stamp" data-time="1322631934000">3 minutes ago</div>
+					</div>
+				</li>
+
+				<li class="tweet promoted-tweet" data-user-name="dougneiner">
+					<div class="image">
+						<img height="48" width="48" src="http://twitter.com/api/users/profile_image?screen_name=dougneiner" alt="" />
+					</div>
+					<div class="content">
+						<div class="user">
+							<a class="user-name" href="http://twitter.com/dougneiner" title="dougneiner">dougneiner</a>
+							<div class="full-name">Doug Neiner</div>
+						</div>
+						<div class="text">I live where beauty meets design...</div>
+						<div class="time-stamp" data-time="1322631934000">17 minutes ago</div>
+					</div>
+				</li>
+
+				<li class="tweet normal-tweet" data-user-name="redwolves">
+					<div class="image">
+						<img height="48" width="48" src="http://twitter.com/api/users/profile_image?screen_name=redwolves" alt="" />
+					</div>
+					<div class="content">
+						<div class="user">
+							<a class="user-name" href="http://twitter.com/redwolves" title="redwolves">redwolves</a>
+							<div class="full-name">Ralph Whitbeck</div>
+						</div>
+						<div class="text">Now sit right back and you'll hear a tale...</div>
+						<div class="time-stamp" data-time="1322631934000">32 minutes ago</div>
+					</div>
+				</li>
+			</ul>
+			<div id="compose">
+				<textarea></textarea>
+				<button class="send">Send</button>
+				<button class="refresh">Refresh</button>
+				<select class="refreshCount">
+					<option>05</option>
+					<option>10</option>
+					<option>25</option>
+					<option>50</option>
+					<option>100</option>
+				</select>
+			</div>
+			<div id="notification">This is a notification.</div>
+		</section>
+		<footer>
+			<div>A progressive demo for training labs</div>
+		</footer>
+
+	</div>
+	<!-- /QUNIT FIXTURE -->
+	</div>
+
+	<script src="../../libs/jquery-1.7.1.min.js"></script>
+	<script src="../../libs/amplify.min.js"></script>
+	<script src="../../libs/jquery-qunit/qunit/qunit.js"></script>
+	<script src="../../libs/jquery-qunit/addons/composite/qunit-composite.js"></script>
+	<script src="../../libs/jquery.mockjax.js"></script>
+	<script src="../common/common.js"></script>
+	<script src="./lab.js"></script>
+	<script src="./lab.tests.js"></script>
+</body>
+</html>
