@@ -33,7 +33,7 @@ test( "Exercise 2", function() {
 
 	var $doc = $( document ),
 		button = $( ".refresh" ),
-		events = $doc.data( "events" ),
+		events = $._data( $doc[0], "events" ),
 		clickEvents = ( events && events.click ? events.click.length : 0 ),
 		originalTweetsCount = $( ".tweet" ).length,
 		lastTweet;
@@ -41,7 +41,7 @@ test( "Exercise 2", function() {
 	lesson.advancedEvents.exercise_1();
 	lesson.advancedEvents.exercise_2();
 
-	events = $doc.data( "events" );
+	events = $._data( $doc[0], "events" );
 
 	equal( events && events.click ? events.click.length : 0, clickEvents + 1, "There should be one new click event." );
 

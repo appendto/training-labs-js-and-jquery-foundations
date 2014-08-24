@@ -53,13 +53,13 @@ test( "Exercise 4", function() {
 
 	lesson.methods.exercise_3();
 
-	equals( timeStamps.css( "font-variant" ), "normal", "The time stamps font-variant is normal initially" );
+	equal( timeStamps.css( "font-variant" ), "normal", "The time stamps font-variant is normal initially" );
 	ok( timeStamps.is( ":hidden" ), "The time stamps are initially invisible" );
 	ok( !fullNames.hasClass( "subtle" ), "The full names don't initially have the subtle class" );
 
 	lesson.methods.exercise_4();
 
-	equals( timeStamps.css( "font-variant" ), "small-caps", "The time stamps font-variant is small-caps" );
+	equal( timeStamps.css( "font-variant" ), "small-caps", "The time stamps font-variant is small-caps" );
 	ok( timeStamps.is( ":visible" ), "The time stamps are visible after the animation ends" );
 	ok( fullNames.hasClass( "subtle" ), "The full names now have the subtle class" );
 });

@@ -19,56 +19,12 @@
 		<section id="user-profile">
 			<img src="" width="73" height="73" />
 			<h2>@Username</h2>
-			<p class="user-tweets">Tweets: <span>0</span></p>
-			<p class="followers">Followers: <span>0</span></p>
-			<p class="following">Following: <span>0</span></p>
+			<p class="user-tweets">Tweets: <span>1,136</span></p>
+			<p class="followers">Followers: <span>5,356</span></p>
+			<p class="following">Following: <span>2,708</span></p>
 		</section>
 
 		<section id="feed">
-
-			<ul id="tweets" class="normal-tweet show-promoted-tweets">
-				<li class="tweet promoted-tweet" data-user-name="appendTo">
-					<div class="image">
-						<img height="48" width="48" src="http://twitter.com/api/users/profile_image?screen_name=appendTo" alt="" />
-					</div>
-					<div class="content">
-						<div class="user">
-							<a class="user-name" href="http://twitter.com/appendTo" title="appendTo">appendTo</a>
-							<div class="full-name">appendTo</div>
-						</div>
-						<div class="text">A tweet here, a tweet there, a tweet everyewhere...</div>
-						<div class="time-stamp" data-time="1322631934000">3 minutes ago</div>
-					</div>
-				</li>
-
-				<li class="tweet promoted-tweet" data-user-name="dougneiner">
-					<div class="image">
-						<img height="48" width="48" src="http://twitter.com/api/users/profile_image?screen_name=dougneiner" alt="" />
-					</div>
-					<div class="content">
-						<div class="user">
-							<a class="user-name" href="http://twitter.com/dougneiner" title="dougneiner">dougneiner</a>
-							<div class="full-name">Doug Neiner</div>
-						</div>
-						<div class="text">I live where beauty meets design...</div>
-						<div class="time-stamp" data-time="1322631934000">17 minutes ago</div>
-					</div>
-				</li>
-
-				<li class="tweet normal-tweet" data-user-name="redwolves">
-					<div class="image">
-						<img height="48" width="48" src="http://twitter.com/api/users/profile_image?screen_name=redwolves" alt="" />
-					</div>
-					<div class="content">
-						<div class="user">
-							<a class="user-name" href="http://twitter.com/redwolves" title="redwolves">redwolves</a>
-							<div class="full-name">Ralph Whitbeck</div>
-						</div>
-						<div class="text">Now sit right back and you'll hear a tale...</div>
-						<div class="time-stamp" data-time="1322631934000">32 minutes ago</div>
-					</div>
-				</li>
-			</ul>
 			<div id="compose">
 				<textarea></textarea>
 				<button class="send">Send</button>
@@ -82,6 +38,50 @@
 				</select>
 			</div>
 			<div id="notification">This is a notification.</div>
+			<ul id="tweets" class="normal-tweet show-promoted-tweets">
+				<li class="tweet promoted-tweet" data-user-name="appendTo">
+					<div class="image">
+						<img height="48" width="48" src="http://twitter.com/api/users/profile_image?screen_name=appendTo" alt="" />
+					</div>
+					<div class="content">
+						<div class="user">
+							<a class="user-name" href="http://twitter.com/appendTo" title="appendTo">appendTo</a>
+							<div class="full-name">appendTo</div>
+						</div>
+						<div class="text">Our new website has officially launched! Check it out! http://appendto.com/  #ResponsiveDesign</div>
+						<div class="time-stamp" data-time="1322631934000">3 minutes ago</div>
+					</div>
+				</li>
+
+				<li class="tweet promoted-tweet" data-user-name="jcreamer898">
+					<div class="image">
+						<img height="48" width="48" src="http://twitter.com/api/users/profile_image?screen_name=jcreamer898" alt="" />
+					</div>
+					<div class="content">
+						<div class="user">
+							<a class="user-name" href="http://twitter.com/jcreamer898" title="jcreamer898">jcreamer898</a>
+							<div class="full-name">Jonathan Creamer</div>
+						</div>
+						<div class="text">Debugging AngularJS Apps from the Console http://modernweb.com/2014/08/21/debugging-angularjs-apps-console … #angular #modernweb @modernwebhq</div>
+						<div class="time-stamp" data-time="1322631934000">17 minutes ago</div>
+					</div>
+				</li>
+
+				<li class="tweet normal-tweet" data-user-name="redwolves">
+					<div class="image">
+						<img height="48" width="48" src="http://twitter.com/api/users/profile_image?screen_name=redwolves" alt="" />
+					</div>
+					<div class="content">
+						<div class="user">
+							<a class="user-name" href="http://twitter.com/redwolves" title="redwolves">redwolves</a>
+							<div class="full-name">Ralph Whitbeck</div>
+						</div>
+						<div class="text">So @burkeholland's #mwconf talk  is by far the funniest talk I have seen in a long time.  I am literally in tears.</div>
+						<div class="time-stamp" data-time="1322631934000">32 minutes ago</div>
+					</div>
+				</li>
+			</ul>
+			
 		</section>
 		<footer>
 			<div>A progressive demo for training labs</div>
@@ -90,54 +90,40 @@
 	</div>
 	<!-- /QUNIT FIXTURE -->
 
-<script src="./libs/jquery-1.7.1.min.js"></script>
-<script src="./libs/jquery-ui-1.8.16/js/jquery-ui-1.8.16.custom.min.js"></script>
-<script src="./libs/amplify.min.js"></script>
-<script src="./libs/jquery.mockjax.js"></script>
+<script src="./libs/jquery-1.11.1.min.js"></script>
+<script src="./libs/jquery.mockjax-1.5.3.js"></script>
 <script src="./labs/common/common.js"></script>
 <script src="./labs/01-find-something/lab.js"></script>
 <script src="./labs/02-jquery-methods/lab.js"></script>
 <script src="./labs/04-manipulation/lab.js"></script>
-<script src="./labs/05-selector-and-dom-performance/lab.js"></script>
 <script src="./labs/06-events/lab.js"></script>
-<script src="./labs/07-ajax/lab.js"></script>
-<script src="./labs/08-animation/lab.js"></script>
 <script src="./labs/09-advanced-events/lab.js"></script>
-<script src="./labs/10-plugins/lab.js"></script>
-<script src="./labs/13-contextual-jquery-selectors/lab.js"></script>
-<script src="./labs/15-ui-widget-factory/lab.js"></script>
+
 
 <script>
-$( function() {
+	$( function() {
+		var userName = "appendTo",
+			template = lesson.helpers.template;
 
-	var userName = amplify.store( "userName" ),
-		template = lesson.helpers.template;
+		$( "#user-profile" )
+			.find( "img" )
+				.attr( "src", template( lesson.data.profileImageTemplate, { userName: userName } ) )
+				.end()
+			.find( "h2" )
+				.html( template( lesson.data.profileLinkTemplate, { userName: userName } ) );
 
-	if ( !userName ) {
-		userName = prompt( "What is your Twitter username?", "appendTo" );
-		amplify.store( "userName", userName );
-	}
-
-	$( "#user-profile" )
-		.find( "img" )
-			.attr( "src", template( lesson.data.profileImageTemplate, { userName: userName } ) )
-			.end()
-		.find( "h2" )
-			.html( template( lesson.data.profileLinkTemplate, { userName: userName } ) );
-
-	$.each( lesson, function ( lesson, exercises ) {
-		$.each( exercises, function ( exercise, method ) {
-			if ( /^exercise_/.test( exercise ) ) {
-				method( $.noop );
-			}
+		$.each( lesson, function ( lesson, exercises ) {
+			$.each( exercises, function ( exercise, method ) {
+				if ( /^exercise_/.test( exercise ) ) {
+					method( $.noop );
+				}
+			});
 		});
+
 	});
 
-});
-
 </script>
 
-</script>
 
 </body>
 </html>

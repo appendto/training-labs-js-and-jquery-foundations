@@ -5,6 +5,8 @@ Inside of the `labs` folder (structure detailed below) you will notice several d
 - 01-find-something
 - 02-jquery-methods
 - 04-manipulation
+- 06-events
+- 09-advanced-events
 
 Each lab folder includes a reference file to compare your answers against once you've completed the exercise.
 

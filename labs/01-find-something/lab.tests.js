@@ -12,8 +12,8 @@ test( "Exercise 1", function() {
 		expected = $( "header" );
 
 	expect( 3 );
-	equals( actual.length, 1, "Only one element was returned in the selection" );
-	equals( actual.length, expected.length, "Length of selections are the same" );
+	equal( actual.length, 1, "Only one element was returned in the selection" );
+	equal( actual.length, expected.length, "Length of selections are the same" );
 	deepEqual( actual[ 0 ], expected[ 0 ], "Deep comparions of selections are the same" );
 });
 
@@ -22,8 +22,8 @@ test( "Exercise 2", function() {
 		expected = $( "#tweets .tweet:first" );
 
 	expect( 3 );
-	equals( actual.length, 1, "Only one element was returned in the selection" );
-	equals( actual.length, expected.length, "Length of selections are the same" );
+	equal( actual.length, 1, "Only one element was returned in the selection" );
+	equal( actual.length, expected.length, "Length of selections are the same" );
 	deepEqual( actual[ 0 ], expected[ 0 ], "Deep comparions of selections are the same" );
 });
 
@@ -32,8 +32,8 @@ test( "Exercise 3", function() {
 		expected = $( "#tweets .tweet:last" );
 
 	expect( 3 );
-	equals( actual.length, 1, "Only one element was returned in the selection" );
-	equals( actual.length, expected.length, "Length of selections are the same" );
+	equal( actual.length, 1, "Only one element was returned in the selection" );
+	equal( actual.length, expected.length, "Length of selections are the same" );
 	deepEqual( actual[ 0 ], expected[ 0 ], "Deep comparions of selections are the same" );
 });
 
@@ -42,27 +42,27 @@ test( "Exercise 4", function() {
 		expected = $( "#tweets" ).find( ".tweet:first, .tweet:last" );
 
 	expect( 3 );
-	equals( actual.length, 2, "Only two elements were returned in the selection" );
-	equals( actual.length, expected.length, "Length of selections are the same" );
+	equal( actual.length, 2, "Only two elements were returned in the selection" );
+	equal( actual.length, expected.length, "Length of selections are the same" );
 	deepEqual( actual.get(), expected.get(), "Deep comparions of selections are the same" );
 });
 
 test( "Exercise 5", function() {
 	var actual = lesson.selectors.exercise_5(),
-		expected = $( ".tweet[data-user-name='dougneiner']" );
+		expected = $( ".tweet[data-user-name='jcreamer898']" );
 
 	expect( 3 );
-	equals( actual.length, 1, "Only one element was returned in the selection" );
-	equals( actual.length, expected.length, "Length of selections are the same" );
+	equal( actual.length, 1, "Only one element was returned in the selection" );
+	equal( actual.length, expected.length, "Length of selections are the same" );
 	deepEqual( actual[ 0 ], expected[ 0 ], "Deep comparions of selections are the same" );
 });
 
 test( "Exercise 6", function() {
 	var actual = lesson.selectors.exercise_6(),
-		expected = $( ".tweet[data-user-name$='r']" );
+		expected = $( ".tweet[data-user-name$='s']" );
 
 	expect( 3 );
-	equals( actual.length, 1, "Only one element was returned in the selection" );
-	equals( actual.length, expected.length, "Length of selections are the same" );
+	equal( actual.length, 1, "Only one element was returned in the selection" );
+	equal( actual.length, expected.length, "Length of selections are the same" );
 	deepEqual( actual.get(), expected.get(), "Deep comparions of selections are the same" );
 });

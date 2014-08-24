@@ -19,11 +19,11 @@ test( "Exercise 1", function() {
 	var expectation = tweets.css( "background-color" ).indexOf("transparent") === -1 ?
 		"rgba(0, 0, 0, 0)" : "transparent";
 
-	equals( tweets.css( "background-color" ), expectation, "The background color of the tweets are transparent initially" );
+	equal( tweets.css( "background-color" ), expectation, "The background color of the tweets are transparent initially" );
 
 	lesson.manipulation.exercise_1();
 
-	equals( tweets.css( "background-color" ), "rgb(0, 128, 0)", "The updated background color of the tweets are green" );
+	equal( tweets.css( "background-color" ), "rgb(0, 128, 0)", "The updated background color of the tweets are green" );
 });
 
 test( "Exercise 2", function() {
@@ -48,17 +48,17 @@ test( "Exercise 3", function() {
 
 	lesson.manipulation.exercise_3();
 
-	equals( tweets.find( ".tweet" ).length, 0, "The tweets have been removed" );
+	equal( tweets.find( ".tweet" ).length, 0, "The tweets have been removed" );
 });
 
 test( "Exercise 4", function() {
 	expect( 2 );
 
-	equals( $( "#tweets .tweet" ).length, 3, "There are 3 tweets inside of the unordered list initially" );
+	equal( $( "#tweets .tweet" ).length, 3, "There are 3 tweets inside of the unordered list initially" );
 
 	lesson.manipulation.exercise_4();
 
-	equals( $( "#tweets .tweet" ).length, 8, "There are 8 (3 origional plus 5 new ones) tweets that have been added to the unordered list" );
+	equal( $( "#tweets .tweet" ).length, 8, "There are 8 (3 origional plus 5 new ones) tweets that have been added to the unordered list" );
 });
 
 test( "Exercise 5", function() {
@@ -82,7 +82,7 @@ test( "Exercise 6", function() {
 
 	lesson.manipulation.exercise_6();
 
-	equals( textarea.attr( "placeholder" ), "Enter tweet here", "The textarea placeholder is not empty" );
+	equal( textarea.attr( "placeholder" ), "Enter tweet here", "The textarea placeholder is not empty" );
 });
 
 test( "Exercise 7", function() {
@@ -92,8 +92,8 @@ test( "Exercise 7", function() {
 
 	lesson.manipulation.exercise_6();
 	textareaValue = lesson.manipulation.exercise_7();
-	equals( textareaValue, textarea.attr( "placeholder" ), "The placeholder of the textarea is correct" );
-	equals( textareaValue, "Enter tweet here", "The placeholder of the textarea is correct" );
+	equal( textareaValue, textarea.attr( "placeholder" ), "The placeholder of the textarea is correct" );
+	equal( textareaValue, "Enter tweet here", "The placeholder of the textarea is correct" );
 });
 
 test( "Exercise 8", function() {
@@ -101,11 +101,11 @@ test( "Exercise 8", function() {
 
 	expect( 2 );
 
-	equals( refreshCount.val(), "05", "The value of the refreshCount dropdown is 5 initially" );
+	equal( refreshCount.val(), "05", "The value of the refreshCount dropdown is 5 initially" );
 
 	lesson.manipulation.exercise_8();
 
-	equals( refreshCount.val(), "25", "The value of the refreshCount dropdown is 25" );
+	equal( refreshCount.val(), "25", "The value of the refreshCount dropdown is 25" );
 });
 
 test( "Exercise 9", function() {
@@ -115,8 +115,8 @@ test( "Exercise 9", function() {
 
 	lesson.manipulation.exercise_8();
 	actualCount = lesson.manipulation.exercise_9();
-	equals( actualCount, refreshCount.val(), "The value of the refreshCount dropdown is 25" );
-	equals( actualCount, "25", "The value of the refreshCount dropdown is 25" );
+	equal( actualCount, refreshCount.val(), "The value of the refreshCount dropdown is 25" );
+	equal( actualCount, "25", "The value of the refreshCount dropdown is 25" );
 });
 
 test( "Exercise 10", function() {
@@ -129,8 +129,8 @@ test( "Exercise 10", function() {
 	tweets.each( function() {
 		var text = $( this ).text();
 
-		equals( text[ 0 ], "[", "The first character of the time stamp is [" );
-		equals( text[ text.length -1 ], "]", "The last character of the time stamp is ]" );
+		equal( text[ 0 ], "[", "The first character of the time stamp is [" );
+		equal( text[ text.length -1 ], "]", "The last character of the time stamp is ]" );
 	});
 });
 

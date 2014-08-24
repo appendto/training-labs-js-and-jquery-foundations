@@ -36,13 +36,13 @@ lesson.selectors = {
 	},
 
 	exercise_5: function() {
-		// Select all of the tweets with the data-user-name of dougneiner
+		// Select all of the tweets with the data-user-name of jcreamer898
 
 		return ;
 	},
 
 	exercise_6: function() {
-		// Select all of the tweets that data-user-name ends with the letter r
+		// Select all of the tweets that data-user-name ends with the letter s
 
 		return ;
 	}
